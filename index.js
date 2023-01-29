@@ -97,22 +97,22 @@ const titles = () => {
   });
 };
 
-const titles1 = () => {
-  let titles = arrayDiTitoli();
-  let sorted = titles.sort((a, b) => {
-    return a.rank - b.rank;
-  });
-  console.log(sorted);
-  let alert = document.querySelector(".alert ul.list");
-  alert.innerHTML = "";
-  sorted.forEach((song) => {
-    alert.innerHTML += `<li class='list-group-item'>
-        ${song.title} - ${song.rank}  
-        
-        </li>`;
-  });
-  alert.parentElement.classList.toggle("d-none");
-};
+// const titles1 = () => {
+//   let titles = arrayDiTitoli();
+//   let sorted = titles.sort((a, b) => {
+//     return a.rank - b.rank;
+//   });
+//   console.log(sorted);
+//   let alert = document.querySelector(".alert ul.list");
+//   alert.innerHTML = "";
+//   sorted.forEach((song) => {
+//     alert.innerHTML += `<li class='list-group-item'>
+//         ${song.title} - ${song.rank}
+
+//         </li>`;
+//   });
+//   alert.parentElement.classList.toggle("d-none");
+// }; NO DA VEDERE
 
 window.onload = async () => {
   await renderFavSection();
